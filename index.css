@@ -1043,10 +1043,24 @@ section {
   transform: rotateY(180deg);
 }
 
-@media (hover: hover) {
-  .business-card:hover {
-    transform: rotateY(180deg);
-  }
+.business-card:hover {
+  transform: translateY(-2px);
+}
+
+.business-card.flipped:hover {
+  transform: rotateY(180deg) translateY(-2px);
+}
+
+.business-card:active {
+  transform: scale(0.98);
+}
+
+.business-card.flipped:active {
+  transform: rotateY(180deg) scale(0.98);
+}
+
+.business-card:hover .card-face {
+  box-shadow: 0 15px 35px rgba(58, 83, 64, 0.14);
 }
 
 .card-face {
