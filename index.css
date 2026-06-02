@@ -196,6 +196,10 @@ p {
 /* ==========================================================================
    UTILITY & STRUCTURAL LAYOUTS
    ========================================================================== */
+section {
+  scroll-margin-top: 140px; /* Offset for fixed header and announcement bar */
+}
+
 .section-container {
   width: 100%;
   max-width: 1200px;
@@ -295,10 +299,9 @@ p {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: var(--header-padding) 0;
   background-color: var(--header-bg);
   box-shadow: var(--header-shadow);
-  transition: padding var(--transition-smooth), background-color var(--transition-smooth), box-shadow var(--transition-smooth);
+  transition: background-color var(--transition-smooth), box-shadow var(--transition-smooth);
   backdrop-filter: var(--glass-blur);
 }
 
@@ -306,10 +309,11 @@ p {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: var(--header-padding) var(--spacing-md);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: padding var(--transition-smooth);
 }
 
 .brand-logo {
