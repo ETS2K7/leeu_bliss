@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeeU Bliss - Gifts & Events | Hamilton, New Zealand</title>
+  <meta name="description" content="Premium event styling, stage decorations, custom gift hampers, balloon garlands, and bespoke return gifts in Hamilton, New Zealand. Crafted with care. Styled with love.">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Seasonal Announcement Bar -->
+  <div id="announcement-bar" class="announcement-bar">
+    <div class="announcement-content">
+      <span>✨ Christmas & New Year Custom Orders are Now Open! Secure your spot early. 🎁</span>
+      <button class="announcement-close" id="close-announcement" aria-label="Close Announcement">&times;</button>
+    </div>
+  </div>
+
+  <!-- Header Section -->
+  <header id="main-header" class="main-header">
+    <div class="header-container">
+      <a href="#" class="brand-logo">
+        <img src="assets/logo.jpg" alt="LeeU Bliss Logo" class="logo-img" id="header-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">LeeU Bliss</span>
+          <span class="brand-subtitle">GIFTS & EVENTS</span>
+        </div>
+      </a>
+      
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-label="Toggle Navigation Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="#quote-builder" class="nav-link">Inquiry Builder</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-btn">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">ELEGANT • CUSTOMIZED • MEMORABLE</div>
+          <h1 class="hero-title">Crafting Moments, Wrapping Memories</h1>
+          <p class="hero-desc">
+            Beautifully curated gift hampers, bespoke return gifts, and elegant event styling – bringing a touch of bliss to your special occasions.
+          </p>
+          <div class="hero-actions">
+            <a href="#gallery" class="btn btn-primary">VIEW GALLERY</a>
+            <a href="#quote-builder" class="btn btn-secondary">GET ESTIMATE</a>
+          </div>
+          <div class="hero-sparkles">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="sparkle-svg">
+              <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z" fill="currentColor"/>
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="sparkle-svg secondary">
+              <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <div class="hero-image-wrapper">
+            <img src="assets/gift_box.png" alt="LeeU Bliss Gift Box" class="hero-img" width="500" height="500" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-text-content">
+            <span class="section-badge">ABOUT US</span>
+            <h2 class="section-title">Welcome to LeeU Bliss</h2>
+            <p class="about-desc">
+              At LeeU Bliss, we believe in the art of thoughtful gifting and perfectly styled celebrations. Whether it's a custom-made gift hamper, personalized return gift, or full-scale event decor, we are dedicated to creating unforgettable experiences.
+            </p>
+            <div class="about-slogan">
+              <span class="slogan-line">"Crafted with care. Styled with love"</span>
+            </div>
+          </div>
+          <div class="about-photo-card">
+            <!-- Embedding our official logo here to solidify branding -->
+            <div class="about-brand-card">
+              <img src="assets/logo.jpg" alt="LeeU Bliss Brand Monogram" class="about-logo">
+              <h3>LeeU Bliss Gifts & Events</h3>
+              <p>Hamilton, New Zealand</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">OUR SERVICES</span>
+          <h2 class="section-title">What We Offer</h2>
+          <p class="section-subtitle">Let us turn your special moments into unforgettable memories.</p>
+        </div>
+        
+        <div class="services-grid">
+          <!-- Gift Hampers -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <!-- Gift Icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                <rect x="2" y="7" width="20" height="5"></rect>
+                <line x1="12" y1="22" x2="12" y2="7"></line>
+                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Gift Hampers</h3>
+            <p class="service-card-desc">Individually crafted hampers tailored to your needs. Perfect for corporate gifting, birthdays, anniversaries, and holidays.</p>
+          </div>
+
+          <!-- Event Styling -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <!-- Balloon Icon / Party -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a5 5 0 0 1 5 5c0 3.5-3 5.5-5 8.5-2-3-5-5-5-8.5a5 5 0 0 1 5-5z"></path>
+                <path d="M12 15.5c-.5.5-1 1-1.5 2s-.5 2 0 3 .5 1.5 1 2"></path>
+                <path d="M9.5 7.5a2.5 2.5 0 0 1 5 0"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Event Styling</h3>
+            <p class="service-card-desc">Unique and elegant stage decorations, custom backdrops, balloon garlands, and floral arrangements for any occasion.</p>
+          </div>
+
+          <!-- Return Gifts -->
+          <div class="service-card">
+            <div class="service-icon-box">
+              <!-- Hearts / Favors box -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Return Gifts</h3>
+            <p class="service-card-desc">Memorable takeaway gifts, customized party favors, and elegant gift boxes to thank your guests for sharing your celebration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">GALLERY</span>
+          <h2 class="section-title">Our Craft in Action</h2>
+          <p class="section-subtitle">Real moments, styled decorations, and custom creations from our events.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="gallery-filters" role="tablist" aria-label="Filter gallery items">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="stage" role="tab" aria-selected="false">Stage Styling</button>
+          <button class="filter-btn" data-filter="balloon" role="tab" aria-selected="false">Balloons & Florals</button>
+          <button class="filter-btn" data-filter="hamper" role="tab" aria-selected="false">Hampers</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Stage 1 -->
+          <div class="gallery-item" data-category="stage">
+            <img src="assets/gallery/stage1.jpg" alt="LeeU Bliss stage styling decor" class="gallery-img" aspect-ratio="1" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Stage Styling</span>
+              <span class="gallery-title">Krishiv's 21st Backdrop</span>
+            </div>
+          </div>
+          <!-- Hamper 1 -->
+          <div class="gallery-item" data-category="hamper">
+            <img src="assets/gallery/hamper1.jpg" alt="LeeU Bliss custom gift hamper" class="gallery-img" aspect-ratio="1" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Hampers</span>
+              <span class="gallery-title">Luxury Sweet Hamper</span>
+            </div>
+          </div>
+          <!-- Balloon 1 -->
+          <div class="gallery-item" data-category="balloon">
+            <img src="assets/gallery/balloon1.jpg" alt="LeeU Bliss balloon garland" class="gallery-img" aspect-ratio="1" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Balloons & Florals</span>
+              <span class="gallery-title">Warm Sand Arch</span>
+            </div>
+          </div>
+          <!-- Stage 2 -->
+          <div class="gallery-item" data-category="stage">
+            <img src="assets/gallery/stage2.jpg" alt="LeeU Bliss communion stage decoration" class="gallery-img" aspect-ratio="1" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Stage Styling</span>
+              <span class="gallery-title">Purple Bloom Stage</span>
+            </div>
+          </div>
+          <!-- Hamper 2 -->
+          <div class="gallery-item" data-category="hamper">
+            <img src="assets/gallery/hamper2.jpg" alt="LeeU Bliss personalized chocolate hamper" class="gallery-img" aspect-ratio="1" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Hampers</span>
+              <span class="gallery-title">Red Velvet Chocolate Basket</span>
+            </div>
+          </div>
+          <!-- Balloon 2 -->
+          <div class="gallery-item" data-category="balloon">
+            <img src="assets/gallery/balloon2.jpg" alt="LeeU Bliss floral setup" class="gallery-img" aspect-ratio="1" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Balloons & Florals</span>
+              <span class="gallery-title">Elora Pink Arch Setup</span>
+            </div>
+          </div>
+          <!-- Stage 3 -->
+          <div class="gallery-item" data-category="stage">
+            <img src="assets/gallery/stage3.jpg" alt="LeeU Bliss birthday stage decoration" class="gallery-img" aspect-ratio="1" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Stage Styling</span>
+              <span class="gallery-title">Royal Blue & Gold Setup</span>
+            </div>
+          </div>
+          <!-- Hamper 3 -->
+          <div class="gallery-item" data-category="hamper">
+            <img src="assets/gallery/hamper3.jpg" alt="LeeU Bliss gourmet gift hamper" class="gallery-img" aspect-ratio="1" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Hampers</span>
+              <span class="gallery-title">Premium Custom Hamper</span>
+            </div>
+          </div>
+          <!-- Balloon 3 -->
+          <div class="gallery-item" data-category="balloon">
+            <img src="assets/gallery/balloon3.jpg" alt="LeeU Bliss custom balloon garlands" class="gallery-img" aspect-ratio="1" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Balloons & Florals</span>
+              <span class="gallery-title">Golden Balloon Garland</span>
+            </div>
+          </div>
+          <!-- Stage 4 -->
+          <div class="gallery-item" data-category="stage">
+            <img src="assets/gallery/stage4.jpg" alt="LeeU Bliss baby shower decoration" class="gallery-img" aspect-ratio="1" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Stage Styling</span>
+              <span class="gallery-title">Oh Baby Stage Backdrop</span>
+            </div>
+          </div>
+          <!-- Hamper 4 -->
+          <div class="gallery-item" data-category="hamper">
+            <img src="assets/gallery/hamper4.jpg" alt="LeeU Bliss return gifts favors" class="gallery-img" aspect-ratio="1" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Hampers</span>
+              <span class="gallery-title">Elegant Favors Box</span>
+            </div>
+          </div>
+          <!-- Hamper 5 -->
+          <div class="gallery-item" data-category="hamper">
+            <img src="assets/gallery/hamper5.jpg" alt="LeeU Bliss custom chocolate bouquet" class="gallery-img" aspect-ratio="1" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Hampers</span>
+              <span class="gallery-title">Chocolate Bouquet Favor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Inquiry/Quote Builder -->
+    <section id="quote-builder" class="quote-section scroll-reveal">
+      <div class="section-container">
+        <div class="quote-grid">
+          <div class="quote-info-side">
+            <span class="section-badge">INQUIRY BUILDER</span>
+            <h2 class="section-title">Design Your Experience</h2>
+            <p class="quote-desc">
+              Select your occasion and services to build a quick estimate. Send this directly to us on WhatsApp to lock in your date or request details. We will respond with an exact quote customized for your budget!
+            </p>
+            <div class="calculator-benefit">
+              <div class="benefit-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Instant WhatsApp response routing</span>
+              </div>
+              <div class="benefit-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Tailored standard, premium, or luxury budgets</span>
+              </div>
+              <div class="benefit-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Hamilton & Waikato wide coverage</span>
+              </div>
+            </div>
+          </div>
+          <div class="quote-form-side">
+            <form id="calculator-form" class="calculator-card">
+              <h3 class="card-title">Select Options</h3>
+              
+              <!-- Occasion -->
+              <div class="form-group">
+                <label for="calc-occasion">Occasion Type</label>
+                <select id="calc-occasion" class="form-control">
+                  <option value="birthday">Birthday Celebration</option>
+                  <option value="babyshower">Baby Shower</option>
+                  <option value="communion">Holy Communion</option>
+                  <option value="anniversary">Anniversary / Wedding</option>
+                  <option value="housewarming">Housewarming</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="other">Other Occasion</option>
+                </select>
+              </div>
+
+              <!-- Services Needed -->
+              <div class="form-group">
+                <label>Services Needed</label>
+                <div class="selector-grid">
+                  <label class="selector-card">
+                    <input type="checkbox" id="srv-stage" checked>
+                    <span class="card-label">Stage Decor</span>
+                  </label>
+                  <label class="selector-card">
+                    <input type="checkbox" id="srv-balloon" checked>
+                    <span class="card-label">Balloon Garlands</span>
+                  </label>
+                  <label class="selector-card">
+                    <input type="checkbox" id="srv-hampers">
+                    <span class="card-label">Gift Hampers</span>
+                  </label>
+                  <label class="selector-card">
+                    <input type="checkbox" id="srv-favors">
+                    <span class="card-label">Return Gifts</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Guest Count / Scale -->
+              <div class="form-group">
+                <label for="calc-scale">Event Scale (Guests/Units)</label>
+                <select id="calc-scale" class="form-control">
+                  <option value="small">Intimate Gathering (Under 50)</option>
+                  <option value="medium" selected>Standard Celebration (50-150)</option>
+                  <option value="large">Grand Event (150+)</option>
+                </select>
+              </div>
+
+              <!-- Package Tier -->
+              <div class="form-group">
+                <label for="calc-tier">Material & Detail Choice</label>
+                <select id="calc-tier" class="form-control">
+                  <option value="standard">Standard Elegance</option>
+                  <option value="premium" selected>Premium Bespoke (Highly Custom)</option>
+                  <option value="luxury">Luxury Elite (Extravagant Setups)</option>
+                </select>
+              </div>
+
+              <!-- Dynamic Calculator Output -->
+              <div class="calculator-result">
+                <span class="result-label">Estimated Starting Range</span>
+                <span class="result-price" id="calc-price-output">NZ$ 450 - NZ$ 950</span>
+                <span class="result-notice">*Final quote will depend on specific design dimensions & travel.</span>
+              </div>
+
+              <button type="button" class="btn btn-whatsapp-full" id="btn-submit-inquiry">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="whatsapp-icon">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                INQUIRE ON WHATSAPP
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Digital Business Card Interactive Component -->
+    <section id="digital-card" class="card-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">DIGITAL BUSINESS CARD</span>
+          <h2 class="section-title">Save Our Contact</h2>
+          <p class="section-subtitle">Tap or hover to flip our business card and save our details.</p>
+        </div>
+
+        <div class="card-flip-wrapper">
+          <div class="business-card" id="business-card" tabindex="0">
+            <!-- Front of Card -->
+            <div class="card-face card-front">
+              <div class="front-logo-wrap">
+                <!-- SVG Icon mimicking the card's gift box & stars -->
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="card-svg-icon">
+                  <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                  <rect x="2" y="7" width="20" height="5"></rect>
+                  <line x1="12" y1="22" x2="12" y2="7"></line>
+                  <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                  <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                  <path d="M12 12a3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 3 6 7 6 7s6-4 6-7a3 3 0 0 0-3-3 3 3 0 0 0-3 3z" fill="currentColor"></path>
+                </svg>
+                <div class="card-sparkles">
+                  <span class="card-sparkle one">✦</span>
+                  <span class="card-sparkle two">✦</span>
+                  <span class="card-sparkle three">✦</span>
+                </div>
+              </div>
+              <h2 class="card-title-front">LeeU Bliss</h2>
+              <p class="card-subtitle-front">GIFTS & EVENTS</p>
+              <div class="card-front-panel">
+                <span>Crafted with care. Styled with love</span>
+              </div>
+            </div>
+            
+            <!-- Back of Card -->
+            <div class="card-face card-back">
+              <div class="card-back-content">
+                <h3 class="card-back-header">What We Offer</h3>
+                <div class="card-offer-list">
+                  <div class="offer-item">
+                    <span class="offer-title">🎁 Gift Hampers</span>
+                    <span class="offer-desc">Individually Crafted hampers tailored to your needs</span>
+                  </div>
+                  <div class="offer-item">
+                    <span class="offer-title">🎈 Event Styling</span>
+                    <span class="offer-desc">Unique and elegant designs for any occasion</span>
+                  </div>
+                  <div class="offer-item">
+                    <span class="offer-title">🛍️ Return Gifts</span>
+                    <span class="offer-desc">Memorable takeaway gift for your guests</span>
+                  </div>
+                </div>
+                
+                <div class="card-back-contact">
+                  <p class="card-phone">📞 +64 21 088 68508 | +64 22 107 7434</p>
+                </div>
+                
+                <div class="card-back-footer">
+                  <span class="social-item">📸 @leeubliss</span>
+                  <span class="social-item">✉️ leeubliss@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get in Touch Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+      <div class="section-container">
+        <div class="contact-card-container">
+          <div class="contact-card-header">
+            <span class="section-badge">CONTACT US</span>
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">We would love to help you celebrate.</p>
+          </div>
+
+          <div class="contact-buttons">
+            <a href="https://wa.me/64221077434" class="btn btn-whatsapp" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-svg">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              WhatsApp
+            </a>
+            <a href="https://www.instagram.com/leeu_bliss" class="btn btn-instagram" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              Instagram
+            </a>
+          </div>
+
+          <div class="phone-display-container">
+            <a href="tel:+642108868508" class="phone-link">+64 21 088 68508</a>
+          </div>
+
+          <div class="contact-details-grid">
+            <div class="detail-item">
+              <span class="detail-label">Office & Service Address</span>
+              <span class="detail-value">4 Pragma Rise, Rototuna North, Hamilton, New Zealand</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Email Support</span>
+              <a href="mailto:leeubliss@gmail.com" class="detail-value mail-link">leeubliss@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-title">LeeU Bliss</span>
+        <span class="footer-tagline">"Crafted with care. Styled with love"</span>
+      </div>
+      <div class="footer-nav">
+        <a href="#about" class="footer-link">About Us</a>
+        <a href="#services" class="footer-link">Services</a>
+        <a href="#gallery" class="footer-link">Gallery</a>
+        <a href="#quote-builder" class="footer-link">Inquiry Builder</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 LeeU Bliss Gifts & Events. All Rights Reserved.</p>
+        <p class="registry-info">LEEU BLISS LIMITED (NZBN: 9429053085627)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Contact Action Bar -->
+  <div class="mobile-cta-bar" id="mobile-cta-bar" aria-label="Quick Contact Actions">
+    <a href="tel:+642108868508" class="mobile-cta-item cta-call">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/64221077434" class="mobile-cta-item cta-whatsapp" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="app.js"></script>
+</body>
+</html>
