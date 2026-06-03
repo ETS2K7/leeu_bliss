@@ -26,25 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     ANNOUNCEMENT BAR DISMISSAL
-     ========================================================================== */
-  const closeAnnouncementBtn = document.getElementById('close-announcement');
-  const announcementBar = document.getElementById('announcement-bar');
-
-  if (closeAnnouncementBtn && announcementBar) {
-    // Check localStorage to see if user has already dismissed it
-    const isDismissed = localStorage.getItem('announcementDismissed');
-    if (isDismissed === 'true') {
-      announcementBar.classList.add('hidden');
-    }
-
-    closeAnnouncementBtn.addEventListener('click', () => {
-      announcementBar.classList.add('hidden');
-      localStorage.setItem('announcementDismissed', 'true');
-    });
-  }
-
-  /* ==========================================================================
      SHRINKING HEADER FALLBACK (IntersectionObserver/Scroll Listener)
      ========================================================================== */
   const header = document.getElementById('main-header');
@@ -127,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         galleryItems.forEach(item => {
           const itemCategory = item.getAttribute('data-category');
           
-          if (filterValue === 'all' || itemCategory === filterValue) {
+          if (itemCategory === filterValue) {
             item.classList.remove('hidden');
             // Re-apply scale-fade entry effect transition smoothly
             item.style.opacity = '0';
