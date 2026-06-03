@@ -19,6 +19,6 @@
 LeeU Bliss /
 712985204_17891083107532333_6051670403340731743_n.jpg
 
-# Temporary deploy folder
+# Temporary deploy folder and Pages configs
 dist/
-
+.pagesignore
