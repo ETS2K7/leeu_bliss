@@ -851,7 +851,7 @@ section {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-lg);
-  align-items: center;
+  align-items: start;
 }
 
 .quote-desc {

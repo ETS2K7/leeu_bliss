@@ -159,38 +159,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const calcPriceOutput = document.getElementById('calc-price-output');
   const btnSubmitInquiry = document.getElementById('btn-submit-inquiry');
 
-  // Base pricing values for services
-  const basePrices = {
-    stage: 280,
-    balloon: 150,
-    hampers: 120,
-    favors: 90
-  };
-
-  // Scale multipliers (guest size / order unit size)
-  const scaleMultipliers = {
-    small: 0.8,
-    medium: 1.2,
-    large: 2.2
-  };
-
-  // Tier/Detail multipliers
-  const tierMultipliers = {
-    standard: 0.9,
-    premium: 1.3,
-    luxury: 2.4
-  };
-
   function calculateQuote() {
     if (!calcPriceOutput) return;
 
-    let subtotal = 0;
     let selectedAnyService = false;
+    let servicesCount = 0;
 
-    if (srvStage && srvStage.checked) { subtotal += basePrices.stage; selectedAnyService = true; }
-    if (srvBalloon && srvBalloon.checked) { subtotal += basePrices.balloon; selectedAnyService = true; }
-    if (srvHampers && srvHampers.checked) { subtotal += basePrices.hampers; selectedAnyService = true; }
-    if (srvFavors && srvFavors.checked) { subtotal += basePrices.favors; selectedAnyService = true; }
+    if (srvStage && srvStage.checked) { selectedAnyService = true; servicesCount++; }
+    if (srvBalloon && srvBalloon.checked) { selectedAnyService = true; servicesCount++; }
+    if (srvHampers && srvHampers.checked) { selectedAnyService = true; servicesCount++; }
+    if (srvFavors && srvFavors.checked) { selectedAnyService = true; servicesCount++; }
 
     if (!selectedAnyService) {
       calcPriceOutput.textContent = 'Select a service';
@@ -200,18 +178,8 @@ document.addEventListener('DOMContentLoaded', () => {
       calcPriceOutput.style.fontSize = '';
     }
 
-    const scaleVal = calcScale ? calcScale.value : 'medium';
-    const tierVal = calcTier ? calcTier.value : 'premium';
-
-    const scaleMult = scaleMultipliers[scaleVal] || 1.2;
-    const tierMult = tierMultipliers[tierVal] || 1.3;
-
-    // Calculate range
-    const baseMin = Math.round(subtotal * scaleMult * tierMult);
-    const baseMax = Math.round(baseMin * 1.4);
-
-    // Dynamic formatting
-    calcPriceOutput.textContent = `NZ$ ${baseMin} - NZ$ ${baseMax}`;
+    // Dynamic formatting showing count of selected services
+    calcPriceOutput.textContent = `${servicesCount} Service${servicesCount > 1 ? 's' : ''} Selected`;
   }
 
   // Bind input listeners
@@ -233,7 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const occasionName = calcOccasion ? calcOccasion.options[calcOccasion.selectedIndex].text : 'Event';
       const scaleName = calcScale ? calcScale.options[calcScale.selectedIndex].text : 'Standard';
       const tierName = calcTier ? calcTier.options[calcTier.selectedIndex].text : 'Premium';
-      const priceText = calcPriceOutput ? calcPriceOutput.textContent : 'Custom Inquiry';
 
       // Gather checked services
       const services = [];
@@ -247,10 +214,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Build text message
+      // Build text message (excluding any price range)
       const introText = `Hi LeeU Bliss Gifts & Events,\n\nI'd like to inquire about booking services for an upcoming *${occasionName}*.\n\n`;
       const srvListText = `*Services Selected*:\n${services.map(s => `- ${s}`).join('\n')}\n\n`;
-      const scaleTierText = `*Event Scale*: ${scaleName}\n*Material Tier*: ${tierName}\n*Estimated Range*: ${priceText}\n\n`;
+      const scaleTierText = `*Event Scale*: ${scaleName}\n*Material Tier*: ${tierName}\n\n`;
       const outroText = `Please let me know your availability and next steps to plan this celebration. Thank you!`;
 
       const fullMessage = introText + srvListText + scaleTierText + outroText;
